@@ -67,13 +67,13 @@ void print_list(node *&start)
 int length(node *&start)
 {
     int i = 1;
-    node *temp;
+    node *temp = start;
     while (temp != NULL)
     {
         temp = temp->next;
-        i++;
+        ++i;
     }
-    return i;
+    return i-1;
 }
 
 // Memory allocation of node
@@ -254,7 +254,7 @@ node* merge(node *& list1 , node *& list2)
     return result;
 }
 
-void swap(node *& head , int x , int y)
+void swap(node *& head , node * x , node * y)
 {
     
     if(x == y) 
@@ -266,7 +266,7 @@ void swap(node *& head , int x , int y)
     currX = head;
     
       //find x value in linked list
-    while(currX && currX -> data != x)
+    while(currX && currX -> data != x->data)
     {
         prevX  = currX;
         currX = currX->next;    
@@ -274,7 +274,7 @@ void swap(node *& head , int x , int y)
 
 
     //find Y value
-    while(currY != NULL && currY->data != y)
+    while(currY != NULL && currY->data != y->data)
     {
         prevY = currY ;
         currY = currY ->next;
@@ -300,5 +300,38 @@ void swap(node *& head , int x , int y)
     currX -> next = currY ->next;
     currY->next = temp;
     
+
+}
+// Add operation
+node *Add(node *l1 , node * l2)
+{
+    node * list1 = l1 , * list2 = l2;
+    node *dummy = new node();dummy->data = 0;
+    node *temp = dummy;int carry = 0;
+    while(list1 != NULL || list2 != NULL || carry == 1 )
+    {   
+        int sum = 0;
+        if(list1 != NULL)
+        {
+            sum += list1->data;
+            list1 = list1->next;
+        }
+
+        if(list2 != NULL)
+        {
+            sum += list2->data;
+            list2 = list2->next;
+        }
+
+        sum += carry;
+        carry = sum / 10;
+        node * new_node = new node();
+        new_node-> data = sum%10; 
+        new_node ->next = NULL;
+        temp ->next = new_node ;
+        temp = temp -> next ;
+
+    } 
+    return dummy->next;
 
 }
