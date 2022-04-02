@@ -1,0 +1,31 @@
+//flatten the multilevel doubly linked list
+
+#include<iostream>
+using namespace std;
+
+node * flatten(node * head)
+{
+    if(head == NULL)
+        return head;
+    node * top  = head;
+    while(top != NULL)
+    {
+        node * next_node = top->next;
+        if(top->child != NULL)
+        {
+            top->child->prev = top;
+            top->next = flatten(top->child);
+            top->child = NULL;
+            while(top->next != NULL)
+                top = top->next;
+            top->next = next_node;
+            if(next_node != NULL)
+                next_node ->prev = top;
+            top = top -> next;
+        }
+        else {
+            top = next_node;
+        }
+    } 
+    return head;
+}

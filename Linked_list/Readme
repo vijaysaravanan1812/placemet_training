@@ -31,4 +31,13 @@
     group all the nodes with odd indices together 
     followed by the nodes with even indices, and return the
     reordered list.
-
+17) Swap two given node
+18) Quick sort on linked list
+19) Union of two linked list
+20) Insert the element in circular sorted linked list
+21) Implement stack in linked list
+22) Add two numbers
+23) Add two numbers II 
+24) Reverse the doubly linked list
+25) Clone the linked list with random pointers
+26) Flatten the multilevel linked list
