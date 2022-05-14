@@ -23,7 +23,7 @@ node * flatten(node * head)
                 next_node ->prev = top;
             top = top -> next;
         }
-        else {
+        else {g
             top = next_node;
         }
     } 
