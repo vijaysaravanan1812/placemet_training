@@ -28,7 +28,7 @@ int find_majority(vector<int> &num )
         }
     } 
 
-    int majority = num[major];count = 0;
+        int majority = num[major];count = 0;
     for (int i = 0; i < num.size(); i++)
     {
         if(majority == num[i])

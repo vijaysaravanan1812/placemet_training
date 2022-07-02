@@ -44,7 +44,7 @@ int partition(vector<int> &num , int l , int r, int k)
 
 int main()
 {
-    vector <int> num = {21, 45, 63 , 34, 12, 47, 20 };
+    vector <int> num = {2 , 8 , 17, 6 ,15};
     for (int i = 0; i < num.size(); i++)
     {
         cout<<num[i] <<" ";

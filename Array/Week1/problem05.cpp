@@ -31,11 +31,13 @@ int main()
 {
     vector<int> num;
     Solution s;
+    num.push_back(1);
     num.push_back(-2);
-    num.push_back(2);
     num.push_back(5);
-    num.push_back(-11);
-    num.push_back(6);
+    num.push_back(-7);
+    num.push_back(10);
+    
+    
     
 
     cout<<s.max_sum_subarray(num)<<" "<<"\n";

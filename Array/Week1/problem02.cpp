@@ -9,6 +9,7 @@
 
 #include<bits/stdc++.h>
 
+#include<vector>
 using namespace std;
 
 class Solution{
@@ -30,7 +31,9 @@ public:
             }
         }
 
-          cout<<i<<" "<<n<<"\n";
+        
+
+         // cout<<i<<" "<<n<<"\n";
         return n;
     }
   
@@ -56,8 +59,8 @@ int main()
     }
     cout<<"\n";
     int n = s.remove(num , 10);
-    
-    for(int i = 0; i <= n; i++ )
+    num.resize(n);
+    for(int i = 0; i < num.size(); i++ )
     {
         cout<<num[i]<<" ";
     }

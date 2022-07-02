@@ -55,6 +55,12 @@ int main()
     num.push_back(4);
     num.push_back(8);
     Solution s;
+
+    for (int i = 0; i < num.size(); i++)
+    {
+        cout<<num[i]<<" ";
+    }
+    cout<<"\n";
     int n = s.remove(num);
 
     for (int i = 0; i < n; i++)
