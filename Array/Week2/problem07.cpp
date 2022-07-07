@@ -6,6 +6,8 @@ public:
 	    // code here
 	    int left ;
 	    int right ;
+
+		//Square the array
 	    for(int i = 0; i < n ; i++)
 	        arr[i] = arr[i] * arr[i];
 	    
