@@ -123,8 +123,8 @@ int main()
 {
     system("clear");
     printf("Given array \n");
-    int arr1[] = {12,16,19,67};
-    int arr2[] = {13,17,19,20};
+    int arr1[] = {1, 3, 8, 9, 15 };
+    int arr2[] = {7, 11, 18 , 19, 21, 25};
 
 
     int size1 = sizeof(arr1)/sizeof(arr1[0]);
