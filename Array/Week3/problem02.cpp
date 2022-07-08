@@ -1,5 +1,4 @@
-
-// Rotate the 2D array in anti clock wise 
+// Subarray with given sum
 
 class Solution{
 public:	
