@@ -1,0 +1,14 @@
+S = "timetopractice"
+P = "toc"
+Output: 
+toprac
+
+j --> t j --> i j --> m j --> e j --> t j --> o j --> p j --> r j --> a 
+start -->t i --> t 
+start -->i i --> i 
+start -->m i --> m 
+start -->e i --> e 
+start -->t i --> t 
+j --> c i --> o 
+j --> t j --> i j --> c j --> e 
+toprac

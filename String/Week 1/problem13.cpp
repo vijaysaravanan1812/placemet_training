@@ -1,18 +1,4 @@
-/*
-1) Given a String S, reverse the string without reversing its individual words. 
-Words are separated by dots.
 
-*/
-
-#include<iostream>
-#include<string>
-#include<stack>
-using namespace std;
-
-class Solution
-{
-    public:
-    //Function to reverse words in a given string.
     string reverseWords(string s) 
     { 
         vector<string> temp ;string str;
@@ -38,4 +24,3 @@ class Solution
         
         return str;
     } 
-};

@@ -1,33 +1,46 @@
-
-
-/*
-4)
-Find the frequency of character
-*/
-
-#include<bits/stdc++.h>
-
-using namespace std;
-
-int Get_frequency(string str)
-{
-    unordered_map <char , int> m ; int frequency = 0;
-    for( char i : str)
-    {
-        m[i] = m[i] + 1;
-    }
-    for(auto i : m)
-    {
-        cout<<i.first<<" "<<i.second<<endl;    
-    }
-    return 0;
-}
-
-int main()
-{
-    string str = "geeksforgeeks";
-    Get_frequency(str);
-
-    return 0;
-
-}
+	
+//Minimize string value
+    
+    int minValue(string S, int K)
+	{
+	    unordered_map <char , int > frequency;
+	    
+	    if(K > S.length())
+	        return 0;
+	    
+	    for(char x : S){
+	        if(frequency.find(x) != frequency.end()){
+	            frequency[x]++;
+	        }
+	        else{
+	            frequency[x] = 1;
+	        }
+	    }
+	    
+	    
+	    priority_queue<int> q;
+	    for(auto x : frequency){
+	       // cout<<x.first<<" "<<x.second<<" "<<K<<"\n";
+	        q.push(frequency[x.first]);
+	    }
+	    
+	    
+	    while(K--){
+	        int temp = q.top();
+	       
+	        q.pop();
+	        temp = temp - 1;
+	        q.push(temp);
+	    }
+	    
+	    int result = 0;
+	    while(!q.empty()){
+	        int temp = q.top();
+	        result += temp * temp;
+	        q.pop();
+	    }
+	    
+	    return result;
+	    
+	    
+	}

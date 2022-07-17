@@ -12,8 +12,8 @@
     (test cases does not pass)
 11) Next permutation
 12) product puzzle array
-13) implement two stacks
-14) tic tac toe
+13)  tic tac toe
+14) implement two stacks
 15) Longest consecutive sequence
 
 1) partition array into k subset of equal Sum

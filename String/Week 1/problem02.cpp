@@ -14,53 +14,23 @@ If you are unable to solve it then it may result in the death of Iron Man.
 
 using namespace std;
 
-int palindrome(string sentence)
+
+bool saveIronman(string ch)
 {
-    string temp;
-
-    cout<<sentence.size()<<"\n";
-    if(sentence.size() == 0)
-        return 0;
-
-    for (int i = 0; i <= sentence.size(); i++)
-    {
-     
-        if(!((int)sentence[i] >= 65 &&  (int)sentence[i] <= 92) && !((int)sentence[i] >= 97 &&  (int)sentence[i] <= 124 ))
-         { 
-    
-            continue;
-         }
-        else if ((int)sentence[i] >= 65 &&  (int)sentence[i] <= 92)
+    string str1;
+    for(int i = 0 ; i < ch.length() ; i++){
+        if(isupper(ch[i])){
+            ch[i] = tolower(ch[i]);
+        }
+        if(isalpha(ch[i]) || isdigit(ch[i]))
         {
-            sentence[i] = sentence[i] + 32;
-            temp.push_back(sentence[i]);
-        }
-        else{
-            temp.push_back(sentence[i]);
+            str1 += ch[i];
         }
     }
-    cout<<temp<<"\n";
-
-    int i = 0 , j = temp.size() -1 ;
-    while (i < j)
-    {
-        if(temp[i++] == temp[j--])
-            continue;
-        else
-            return 0; 
-    }
-    return 1;
     
-}
-
-int main()
-{
-    string sentence = "i.I";
-    cout<<"At Main :"<<sentence<<"\n";
-    cout<<palindrome(sentence)<<"\n";
-
-    return 0;
-
-
-
+    
+    string str = str1;
+    reverse(str.begin() , str.end());
+    return (str1 == str);
+    
 }
