@@ -2,7 +2,7 @@
         
         map<char , int> freq; 
         
-        int m = s.length();
+                 int m = s.length();
         int n = t.length();
         if(m != n )
             return false;

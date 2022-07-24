@@ -25,6 +25,7 @@ vector<int> diagonal_traversal(node *root){
                 answer.push_back(tmp->data);
                 if(tmp ->left)
                     q.push(tmp->left);
+                
                 tmp = tmp ->right;
             }
 

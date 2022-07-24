@@ -69,6 +69,7 @@ vector<int> boundary(node *root)
     vector<int> result;
     result.push_back(root ->data);
     get_left_side(result, root ->left);
+       
     get_leaves(result, root ->left);
     get_leaves(result, root ->right);
     get_right_side(result, root->right);

@@ -4,17 +4,14 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <stack>
 #include "tree.cpp"
 
 using namespace std;
 
-vector<vector<int>> MySpiralLevelOrder(node *root)
+vector<vector<int>> MyLevelOrder(node *root)
 {
     vector<vector<int>> result;
     queue<node *> q;
-    stack<node *> s;
-
     q.push(root);
     while (!q.empty())
     {
@@ -60,7 +57,7 @@ int main()
     insert(root, 70);
 
     vector<vector<int>> result;
-    result = MySpiralLevelOrder(root);
+    result = MyLevelOrder(root);
     for (int i = 0; i < result.size(); i++)
     {
         for (auto itr = result[i].begin(); itr < result[i].end(); itr++)
