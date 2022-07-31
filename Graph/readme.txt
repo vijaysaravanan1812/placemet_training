@@ -22,3 +22,8 @@
 11) Minimum steps of knight walk
 12) Snake and ladder
 13) Unit Area of largest region of 1's
+14)
+15) X Total Shapes
+16) Check if graph is biparted
+17) Count number of dependency in graph
+18) Flood fill algorithm
