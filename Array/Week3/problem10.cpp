@@ -4,7 +4,7 @@
             
             if(n == 1)
                 return arr[0]*2;
-            else if(arr[0] < 0)
+            else if(arr[n - 1] < 0)
                 return arr[n-1] + arr[n -2 ];
             else if(arr[0] > 0)
                 return arr[0] + arr[1];

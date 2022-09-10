@@ -1,44 +1,52 @@
+//{ Driver Code Starts
+// C++ program Find concatenated string with 
+// uncommon characters of given strings 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+
+// } Driver Code Ends
+
+
 class Solution
 {
     public:
     //Function to remove common characters and concatenate two strings.
     string concatenatedString(string s1, string s2) 
     { 
-        
-        set<char> myset1, myset2;
-        for(int i = 0 ; i < s1.length() ; i++ )
-            myset1.insert(s1[i]);
-            
-        for(int i = 0 ; i < s2.length() ; i++)
-            myset2.insert(s2[i]);
-            
-        string str = "";
-        int i = 0 ;
-        while(i < s1.length() || i < s2.length()){
-            if(i == s1.length())
-                break;
-            char c = s1[i];
-            if(!(myset2.find(s1[i]) != myset2.end()))
-                str += c;
-            i++;
-        }
-        
-        i = 0;
-        
-        while(i < s1.length() || i < s2.length()){
-            if(i == s2.length())
-                break;
-            
-            char c = s2[i];
-            if(!(myset1.find(s2[i]) != myset1.end()))
-                str += c;
-            i++;
-        }
-        if(s1 == s2)
-            return "-1";
-        
-        return str;
         // Your code here
+        map<char,int> mp1;
+        map<char,int> mp2;
+        for(int i  = 0; i<s1.size(); i++) mp1[s1[i]]++;
+        for(int i  = 0; i<s2.size(); i++) mp2[s2[i]]++;
+        
+        string result = "";
+        
+        for(int i =0; i<s1.size(); i++) if(mp2.find(s1[i]) == mp2.end()) result += s1[i]; 
+        for(int i =0; i<s2.size(); i++) if(mp1.find(s2[i]) == mp1.end()) result += s2[i];
+        
+        if(result.size() == 0) return "-1";
+        return result;
     }
 
 };
+
+//{ Driver Code Starts.
+
+/* Driver program to test above function */
+int main() 
+{ 
+	int t;
+	cin >> t;
+	
+	while(t--){
+    	string s1, s2;
+    	cin >> s1 >> s2;
+    	Solution obj;
+    	string res = obj.concatenatedString(s1, s2);
+    	cout<<res<<endl;
+	}
+	return 0; 
+}
+
+// } Driver Code Ends

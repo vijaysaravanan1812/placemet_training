@@ -14,7 +14,7 @@ class Solution {
             internal_path = left.first  + right.first + 1; 
         }
         
-        return make_pair(max(left.first , right.first) + 1 , internal_path);
+         return make_pair(max(left.first , right.first) + 1 , internal_path);
     }
     
 public:

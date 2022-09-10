@@ -11,9 +11,7 @@ void pushZerosToEnd(int arr[], int n)
     {
         if (arr[i] != 0) 
         {
-            temp =arr[count];
-            arr[count] = arr[i];
-            arr[i] = temp;
+            swap(arr[count] , arr[i]);
             count++;
         }
 

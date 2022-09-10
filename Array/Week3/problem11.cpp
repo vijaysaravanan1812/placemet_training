@@ -1,7 +1,8 @@
 vector<int> nextPermutation(int N, vector<int> arr){
         if(arr.size() == 1)
             return {arr[0]};
-            
+
+        //find the peak  
         int i = 1;
         int lastinc = -1;
         while(i < N )
@@ -11,12 +12,14 @@ vector<int> nextPermutation(int N, vector<int> arr){
             i++;
         }
         
+        //if no peaks appeared
         if(lastinc == -1){
     
                 sort(arr.begin() , arr.end());
             return arr;
         }
          
+        
         int index = lastinc;
         for( i = lastinc ; i < N; i++){
             if(arr[lastinc - 1] < arr[i] )

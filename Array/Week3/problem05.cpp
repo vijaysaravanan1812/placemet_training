@@ -5,16 +5,15 @@ int top = 0, left = 0 ;
     while(top <= bottom && left <= right ){
         if(dir == 0){
             for(int i = left ; i <= right; i++){
-                int s = result[j] = matrix[top][i]; 
-               cout<<s<<" ";
-               j++;
+                result[j] = matrix[top][i]; 
+                j++;
             }
             top++;
         }
         else if(dir == 1){
             for(int i = top ; i <= bottom ; i++){
-               int s =  result[j] = matrix[i][right];
-               cout<<s<<" ";
+               result[j] = matrix[i][right];
+        
                j++;
             }
             right--;
@@ -22,15 +21,13 @@ int top = 0, left = 0 ;
         else if(dir == 2){
             for(int i = right; i >= left; i--){
                 result[j] = matrix[bottom][i];
-             int s = cout<<s<<" ";
                j++;
             }
             bottom--;
         }
         else if(dir == 3){
             for(int i = bottom ; i >= top ; i--){
-                int s = result[j] = matrix[i][left];
-               cout<<s<<" ";
+                result[j] = matrix[i][left];
                j++;
             }
             left++;

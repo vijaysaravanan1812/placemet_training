@@ -22,17 +22,11 @@ int partition(vector<int> &num , int l , int r, int k)
     {
         if(num[i] <= pivot)
         {
-            //swap (num[pindex] , num[i])
-            temp = num[pindex];
-            num[pindex] = num[i];
-            num[i] = temp;
+            swap(num[pindex] , num[i])
             pindex = pindex + 1;
         }
     }
-    //swap (num[r] , num[pindex]);
-    temp = num[pindex];
-    num[pindex] = num[r];
-    num[r] = temp;
+    swap(num[r] , num[pindex]);
 
 
     if(pindex == k - 1 ) return num[pindex];

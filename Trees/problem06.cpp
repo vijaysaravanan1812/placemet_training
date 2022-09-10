@@ -15,13 +15,11 @@ void get_left_side(vector<int> &result, node *root)
     if (root->left)
     {
         result.push_back(root->data);
-        
         get_left_side(result, root->left);
     }
     else if (root->right)
     {
         result.push_back(root->data);
-        
         get_left_side(result, root->right);
     }
 }
@@ -35,13 +33,12 @@ void get_right_side(vector<int> &result, node *root)
     {
         get_right_side(result, root->right);
         result.push_back(root->data);
-        
     }
     else if (root->left)
     {
         get_right_side(result, root->left);
         result.push_back(root->data);
-        
+   
     }
 }
 

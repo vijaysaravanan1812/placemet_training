@@ -10,9 +10,11 @@ class Solution
     int celebrity(vector<vector<int> >& M, int n) 
     {
         stack <int> s;
+        //considering all celebirity
         for(int i = 0 ; i < n ;i++){
             s.push(i);
         }
+        
         
         int count = 0 ;
         while(count < n -1 ){

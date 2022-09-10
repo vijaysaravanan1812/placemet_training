@@ -15,6 +15,7 @@
 13)  tic tac toe
 14) implement two stacks
 15) Longest consecutive sequence
+16) Maximum number of zeroes 
 
 1) partition array into k subset of equal Sum
 

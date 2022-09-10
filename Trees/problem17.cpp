@@ -40,7 +40,7 @@ public:
         for(int i = 0 ; i < n ;i++)
             cout<<inorder[i]<<" ";
         cout<<"\n";
-        return build(inorder , postorder , 0 , n - 1);;
+        return build(inorder , postorder , 0 , n - 1);
         
     }
 };

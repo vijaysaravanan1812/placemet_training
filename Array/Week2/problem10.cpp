@@ -1,3 +1,15 @@
+Example 1:
+
+Input: 
+N = 5
+Arr[] = {3, 30, 34, 5, 9}
+Output: 9534330
+Explanation: Given numbers are {3, 30, 34,
+5, 9}, the arrangement 9534330 gives the
+largest value.
+
+
+
 class Solution{
 public:
 	// The main function that returns the arrangement with the largest value as

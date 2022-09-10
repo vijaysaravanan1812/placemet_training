@@ -4,7 +4,7 @@
 
 // For each node at position (row, col), its left and right children will 
 // be at positions (row + 1, col - 1) and (row + 1, col + 1) respectively. 
-// The root of the tree is at (0, 0).
+// The root of the tree is at (0, 0).u
 
 // The vertical order traversal of a binary tree is a list of top-to-bottom
 // orderings for each column index starting from the leftmost column and

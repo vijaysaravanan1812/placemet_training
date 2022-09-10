@@ -20,7 +20,7 @@ class solution
         int len = INT_MAX;
         while(j < s.length()){
             mymap[s[j]]--;
-            if(mymap[s[j]] == 0)
+            if(mymap[s[j]] == 0) 
                 count--;
             if(count == 0){
                 while(count == 0){

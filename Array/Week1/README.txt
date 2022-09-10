@@ -17,3 +17,8 @@
 12) Convert the sorted array to wave array
 13) Push all zeros to end of array 
 14) Implement two stacks in array
+15) Suffix sum 
+16) prefix sum
+17) Equilibrium index of array
+18) Find a Subarray with zero
+19) 
