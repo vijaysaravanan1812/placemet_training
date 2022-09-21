@@ -16,6 +16,8 @@
 14) implement two stacks
 15) Longest consecutive sequence
 16) Maximum number of zeroes 
+17) Lock and key problem
+or Nuts and bolt problem
 
 1) partition array into k subset of equal Sum
 

@@ -31,3 +31,18 @@
         D is meant for decreasing,
         So we choose the minimum number
         among 21,31,54,87,etc.
+
+13) Longest common prefix
+14) Isomorphic string
+input:
+str1 = aab
+str2 = xxy
+Output: 1
+Explanation: There are two different
+charactersin aab and xxy, i.e a and b
+with frequency 2and 1 respectively.
+15) Roman Number to integers
+16) Factorial of biggest number
+17) largest number in k swaps
+18) Generate Ip address
+19) Validate Ip address
