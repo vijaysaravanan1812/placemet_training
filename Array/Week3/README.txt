@@ -18,6 +18,13 @@
 16) Maximum number of zeroes 
 17) Lock and key problem
 or Nuts and bolt problem
+18)  Find Transistion point
+19) Bitonic point
+20) Overlapping Intervals (time limit exceeded)
+
+
+
+
 
 1) partition array into k subset of equal Sum
 
