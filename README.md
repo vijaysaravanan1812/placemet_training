@@ -1,3 +1,3 @@
 # placemet_training
 
-  This repository contain important problem that asked in interview
+  This repository contain DSA problems that will asked in interview
